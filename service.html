@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+     background-image: url('caramel macchiato cofee.jpg');
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgb(97, 79, 97);
+    }
+    .header {
+      display: inline-flex;
+      margin: 15px;
+    }
+    h1 {
+      font-size: 30px;
+      color: black;
+      text-transform: capitalize;
+      margin-top: 30px;
+      margin-left: 10px;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar ul {
+      display: flex;
+    }
+    li {
+      list-style: none;
+      margin: 0 20px;
+    }
+    a {
+      text-decoration: none;
+      font-size: 20px;
+      position: relative;
+      color: black;
+    }
+    a::after {
+      content: "";
+      width: 0;
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      height: 3px;
+      background: chartreuse;
+      transition: width 0.5s ease-in-out;
+    }
+
+    a:hover::after {
+      width: 100%;
+    }
+
+    a:hover {
+      color: chocolate;
+    }
+
+    th, td {
+      border: 2px solid black;
+      padding: 12px 20px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin: 20px;
+      color:red;
+    }
+
+    p {
+      font-size: 20px;
+      margin: 30px;
+      line-height: 1.5;
+      color: white;
+    }
+
+    .section {
+      margin-top: 170px;
+      margin-bottom: 400px;
+      margin-left: 500px;
+      margin-right: 470px;
+    }
+
+    table {
+      text-align: center;
+      width: 520px;
+      height: 400px;
+      border: 3px solid black;
+      border-collapse: collapse;
+      background: rgb(13, 0, 255);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER with logo and nav -->
+  <header class="container">
+    <div class="header">
+      <img src="cofee logo.jpg" alt="cofee" style="width: 100px; height: 100px; border-radius: 50%;">
+      <h1>COFEE</h1>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN Content -->
+  <main>
+    <h2>Our Coffee Services </h2>
+    <p>
+    Coffee is a globally cherished beverage brewed from roasted seeds — commonly called beans — of the Coffea plant. With its deep aroma, energizing properties, and bold flavor, coffee has become more than just a drink; it's a cultural phenomenon that connects people across the world.Coffee traces its roots back to the ancient coffee forests of Ethiopia, where legend says a goat herder named Kaldi discovered the energizing effects of coffee beans. From there, coffee spread to the Middle East, especially Yemen, where the first known coffeehouses — known as qahveh khaneh — were established.By the 17th century, coffee had reached Europe and rapidly gained popularity, eventually making its way to the Americas. Today, it’s grown in over 70 countries along the “Coffee Belt” — regions near the equator with the perfect climate for cultivating coffee.</p>
+
+    <p>Coffee is brewed from roasted seeds of the Coffea plant. It contains caffeine, a natural stimulant that enhances alertness and focus. With over 800 flavor compounds, coffee offers diverse tasting notes—from fruity and floral to nutty and chocolaty.Coffee is a rich, aromatic beverage made from roasted coffee beans. Known for its energizing caffeine content, it’s enjoyed in countless forms—from strong espressos to smooth lattes. Whether hot or iced, coffee is the perfect companion for early mornings late-night conversations.</p>
+
+    <!-- SERVICES TABLE -->
+    <section class="section">
+      <table>
+        <thead>
+          <tr>
+            <th>Service Name</th>
+            <th>Description</th>
+            <th>Available Timings</th>
+            <th>Days Available</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Freshly Brewed Coffee</td>
+            <td>Hot or cold coffee served fresh</td>
+            <td>8:00 AM – 10:00 PM</td>
+            <td>All Days</td>
+          </tr>
+          <tr>
+            <td>Coffee Bean Subscription</td>
+            <td>Home delivery of premium beans</td>
+            <td>9:00 AM – 6:00 PM</td>
+            <td>Monday to Saturday</td>
+          </tr>
+          <tr>
+            <td>Customized Coffee Blends</td>
+            <td>Personalize your flavor & roast</td>
+            <td>10:00 AM – 5:00 PM</td>
+            <td>Tuesday to Sunday</td>
+          </tr>
+          <tr>
+            <td>Barista Training Workshop</td>
+            <td>Learn to make pro-level coffee</td>
+            <td>2:00 PM – 4:00 PM</td>
+            <td>Weekends Only</td>
+          </tr>
+          <tr>
+            <td>Event Catering</td>
+            <td>Coffee for events and offices</td>
+            <td>On Request</td>
+            <td>All Days (Pre-book)</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+</body>
+</html>

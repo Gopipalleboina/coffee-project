@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;;
+    }
+   
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgb(97, 79, 97);
+    }
+    .header{
+        display: inline-flex;
+        margin:15px;
+    }
+   
+    h1{
+        font-size: 30PX;
+        color: black;
+        text-transform: capitalize;
+        margin-top: 30px;
+        margin-left: 10px;
+       
+        
+    }
+    navbar {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+    .navbar ul{
+        display: flex;
+    }
+    li{
+        list-style: none;
+        margin: 0 20px;
+    }
+    a{
+        text-decoration: none;
+        font-size: 20px;
+        position: relative;
+    }
+    a::after{
+        content:"";
+        width: 0;
+        position: absolute;
+        left:0;
+        bottom: -6px;
+        height: 3px;
+        background: chartreuse;
+       transition: width 0.5s ease-in-out;
+    }
+    a:hover:after{
+        width: 100%;
+    }
+    a:hover{
+        color: chocolate;
+    }
+    .content{
+       display: flex;
+       justify-content: flex-end;
+       align-items: center;
+       gap: 20px;
+       padding: 20px;
+    }
+    .text{
+        max-width: 50%;
+       
+    }
+    .text h1{
+        font-size: 40px;
+        color: rgb(97, 79, 97);
+        margin-bottom: 5px;
+    }
+    .text p{
+        font-size: 20px;
+        color: rgb(97, 79, 97);
+        line-height: 1.5;
+    }
+    button{
+        background-color: rgb(97, 79, 97);
+        padding: 15px;
+        color:white;
+        border: none;
+        margin: 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover{
+        border: 5px solid rgb(79, 97, 94);
+        transition: all 0.3s ease-in-out;
+    }
+    button:active {
+    transform: scale(0.95);
+    
+}
+    img{
+        border-radius: 50%;
+        width: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        object-fit: cover;
+    }
+    .last{
+        background-color: rgb(97, 79, 97);
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+    marquee {
+        font-size: 20px;
+        color: white;
+    }
+    marquee:hover {
+        color: chocolate;
+        font-weight: bold;
+    }
+
+   </style>
+</head>
+<body>
+    <div class="container">
+    <div class="header">
+        <img src="cofee logo.jpg" alt="cofee" style="width: 100px; height: 100px; border-radius: 50%;">
+        <h1>COFEE</h1>
+       
+    </div>
+     <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+  <div class="content">
+    <div class="text">
+        <h1>welcome to cofee shop</h1><br><br>
+    <p>Welcome to our coffee shop! We offer a wide variety of coffee blends, pastries, and a cozy atmosphere for you to enjoy. Whether you're looking for a quick caffeine fix or a place to relax, we've got you covered. Come visit us and experience the rich flavors of our freshly brewed coffee.</p>
+    <button onclick="window.location.href='about.html'">explore now</button>
+    </div>
+    <img src="cofee section.jpg" alt="cofee section" style="width: 500px; height: 500px; object-fit: cover;">
+    
+    </div>
+    <footer>
+        <div class="last">
+            <marquee behavior="scroll" direction="left">visit again our shop</marquee>
+
+        </div>
+    </footer>
+</body>
+</html>

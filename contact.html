@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;;
+    }
+    body{
+        background-image: url('basic cofee 1.jpg');
+        background-size: cover;
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgb(97, 79, 97);
+    }
+    .header{
+        display: inline-flex;
+        margin:15px;
+    }
+   
+    h1{
+        font-size: 30PX;
+        color: black;
+        text-transform: capitalize;
+        margin-top: 30px;
+        margin-left: 10px;
+       
+        
+    }
+    navbar {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+    .navbar ul{
+        display: flex;
+    }
+    li{
+        list-style: none;
+        margin: 0 20px;
+    }
+    a{
+        text-decoration: none;
+        font-size: 20px;
+        position: relative;
+    }
+    a::after{
+        content:"";
+        width: 0;
+        position: absolute;
+        left:0;
+        bottom: -6px;
+        height: 3px;
+        background: chartreuse;
+       transition: width 0.5s ease-in-out;
+    }
+    a:hover:after{
+        width: 100%;
+    }
+    a:hover{
+        color: chocolate;
+    }
+    .contact{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .box{
+        height: 450px;
+        width: 450px;
+        background: linear-gradient(to bottom,rgba(255, 0, 0, 0.7), rgba(0, 0, 255, 0.7));
+    }
+    h2{
+        margin: 20px;
+        text-align: center;
+    }
+    label{
+        margin-left: 50px;
+    }
+    input{
+        height: 50px;
+        width: 50%;
+    }
+    textarea{
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+    .one{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    button{
+       width: 100px;
+       padding: 8px;
+       background: linear-gradient(to right, rgba(255, 0, 0, 0.7), rgba(0, 0, 255, 0.7));
+       border: none;
+       color: white;
+       font-weight: bold;
+       border-radius: 5px;
+       cursor: pointer;
+       font-size: 24px;
+    }
+   
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="header">
+        <img src="cofee logo.jpg" alt="cofee" style="width: 100px; height: 100px; border-radius: 50%;">
+        <h1>COFEE</h1>
+       
+    </div>
+     <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="contact">
+        <div class="box">
+        <form action="thankyou.html">
+        <h2>Contact Us</h2>
+        <label for="name">Name :</label>
+        <input type="text" required><br><br>
+        <label for="email"> Email :</label>
+        <input type="email" required> <br><br>
+        <label>Country :</label>
+       <select id="country">
+            <option value="USA">USA</option>
+            <option value="India">India</option>
+            <option value="Australia">Australia</option>
+       </select><br><br>
+       <label for="subject">Subject :</label><br>
+       <textarea name="subject" id="subject" cols="30" rows="10" placeholder="Enter Your Message" required></textarea><br><br>
+       <button class="one">submit</button>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
